@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
+
 	<title>header</title>
-	<link rel="stylesheet" href="css/layout1.css">
+	<link rel="stylesheet" href="{{asset('css/layout1.css')}}">
 	
-	<link href="css/layout2.css" rel="stylesheet">
-</head>
-<body>
+	<link href="{{asset('css/layout2.css')}}" rel="stylesheet">
+	<header>
 	<div class="container">
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">My Application</a>
@@ -28,5 +25,4 @@
   </div>
 </nav>
 </div>
-</body>
-</html>
+</header>

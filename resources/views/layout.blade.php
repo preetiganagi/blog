@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title> layout</title>
 
-</head>
-<body>
-@extends('welcome')
+@extends('master')
 
 @section('content')
-	@include('header')
-@endsection
-@section('blog')
 	<div class="container">
 	 <div id="blog" class="row"> 
-                <div class="col-md-10 blogShort">
+                <div class="col-md-12 gap10">
                      <h1>Himalayas Facts</h1>
                      <img src="../images/himalaya.jpg" alt="post img" width=400px height=150px >
                     <p>
@@ -26,20 +17,14 @@
 
 						 <b>Rivers:</b>The Himalayas are the source for the Indus, the Yangtze and the Ganga-Brahmaputra. All three are major river systems for the continent of Asia.
 					</p></article>
+					<hr>
                 </div>
       
-               <div class="col-md-12 gap10"></div>
-             </div>
+            
+    </div>
 </div>
 
 @endsection
-@section('footer')
 
-	@include('footer')
-
-@endsection
-
-</body>
-</html>
 
 
