@@ -17,10 +17,13 @@
    					<label for="body">Body</label>
    					<textarea class="form-control" id="body" name="body"></textarea>
  				</div>
+ 				<div class="form-group">
   				<button type="submit" class="btn btn-primary">Publish</button>
+  			</div>
 			</form>
 	</div>
 </div>
 </div>
-       
+   @include('errors')    
 @endsection
+
