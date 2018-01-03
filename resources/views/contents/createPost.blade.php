@@ -1,5 +1,5 @@
 
-@extends('master')
+@extends('layouts.master')
 
 @section('content')
 <div class="container">
@@ -24,6 +24,6 @@
 	</div>
 </div>
 </div>
-   @include('errors')    
+   @include('contents/errors')    
 @endsection
 

@@ -1,5 +1,5 @@
 
-@extends('master')
+@extends('layouts.master')
 
 @section('content')
 	<div class="container">
@@ -7,7 +7,7 @@
                 <div class="col-md-12 gap10">
                 	@foreach($posts as $post)
                      <a href="/post/{{ $post->id }}"><h2>{{ $post->title }} </h2></a>
-                     <h6>{{ $post ->created_at->toFormattedDateString() }}</h6>
+                     <h6>{{ $post->user->name }} on {{ $post ->created_at->toFormattedDateString() }}</h6>
                    <p>
                    	{{ $post->body}} 
                    </p>

@@ -12,15 +12,24 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
+
       <li class="nav-item">
         <a class="nav-link" href="/post/create">create Post</a>
       </li>
-     <!--  <li class="nav-item">
-        <a class="nav-link" href="/">Notes</a>
-      </li> -->
+
+      <li class="nav-item">
+        <a class="nav-link" href="/register">Register</a>
+      </li>
+
+      <li class="nav-item">
+        @if(Auth::check())
+        <a class="nav-link ml-auto" href="/profile">{{ Auth::user()->name }}</a>
+        @endif
+      </li>
+    
     </ul>
   </div>
 </nav>

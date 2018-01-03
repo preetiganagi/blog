@@ -15,7 +15,9 @@ class CommentController extends Controller
    		'body' => "required"
    	]);
 
-   Comment::create(['body'=> request('body'),'post_id'=>$showPost]);
+   Comment::create(['body'=> request('body'),
+   					'post_id'=>$showPost,
+   					 'user_id' => auth()->id()]);
 
    return back();
    }

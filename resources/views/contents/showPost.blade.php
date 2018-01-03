@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.master')
 
 @section('content')
 	<div class="container">
@@ -6,7 +6,7 @@
                 <div class="col-md-12 gap10">
                
                     <h2>{{ $showPost->title }} </h2>
-                     <h6>{{ $showPost ->created_at->toFormattedDateString() }}</h6>
+                     <h6>{{ $showPost->user->name }} on {{$showPost ->created_at->toFormattedDateString() }}</h6>
                    <p>
                    	{{ $showPost->body}} 
                    </p>
@@ -17,6 +17,7 @@
                 @foreach($showPost->comment as $comment)
                   <ul class='list-group'>
                     <li class='list-group-item'>
+                      {{ $comment->user->name }} on
                      {{ $comment->created_at->diffForHumans() }}:
                       <strong>{{ $comment->body}} </strong>
                     </li>

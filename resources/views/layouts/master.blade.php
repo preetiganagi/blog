@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-@include('header')
+@include('layouts/header')
 <body> 
     <div>
          @yield('content')
     </div>
-@include('footer')   
+@include('layouts/footer')   
 </body>
 </html>

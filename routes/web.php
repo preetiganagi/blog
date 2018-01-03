@@ -20,3 +20,9 @@ Route::post('/post', 'PostController@store');
 Route::get('/post/{post}', 'PostController@show');
 
 Route::post('/comment/{comment}', 'CommentController@store');
+
+Route::get('/register', 'RegistrationController@create');
+Route::post('/register/create', 'RegistrationController@store');
+
+Route::get('/login', 'SessionController@login');
+Route::post('/logout', 'SessionController@destroy');
