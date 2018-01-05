@@ -28,7 +28,7 @@
                   <form method="post" action="/comment/{{ $showPost->id }}">
                     {{ csrf_field() }}
                     <div class="form-group card-block">
-                        <textarea name="body" placeholder ='Your comment here.' class="form-control">
+                        <textarea name="body" placeholder ="Your comment here."" class="form-control">
                         </textarea>   
                     </div>
                     <div>
@@ -38,5 +38,5 @@
                 </div>
     </div>
 </div>
-
+ @include('contents/errors')    
 @endsection

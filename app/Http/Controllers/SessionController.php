@@ -9,7 +9,7 @@ class SessionController extends Controller
     public function login()
     {
 
-
+    	
     }
 
     public function destroy()
